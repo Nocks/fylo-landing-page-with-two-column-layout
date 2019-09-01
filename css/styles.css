@@ -1,0 +1,202 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  color: #585989;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  border: none;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li a {
+  display: block;
+  color: #070439;
+  text-decoration: none;
+}
+
+.horizontal-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+.horizontal-menu .menu-item + .menu-item {
+  margin-top: 0;
+}
+
+header {
+  padding: 1.5em 1.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 12%;
+  justify-content: center;
+}
+header .logo img {
+  width: 4em;
+  height: 1.4em;
+}
+header nav {
+  margin-top: 0;
+  flex: 1 1 25%;
+}
+
+main {
+  margin-top: 4em;
+}
+
+.top-content {
+  min-width: 90%;
+  padding: 1.5em 1.3em;
+}
+
+.top-message-illustration-wrapper {
+  padding: 1em 1em;
+}
+
+.message-illustration {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50vh;
+}
+
+.top-message-illustration {
+  background-image: url("../images/illustration-1.svg");
+}
+
+.marketing {
+  margin-top: 0;
+}
+
+.message {
+  text-align: center;
+}
+.message h3 {
+  color: #070439;
+  margin-top: 0.5em;
+  line-height: 1.6em;
+  font-size: 1.5em;
+}
+.message p {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  color: #070439;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.input-subscription[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #585989;
+  border-radius: 3px;
+  margin: 8px 0;
+}
+.input-subscription[type=text]::placeholder {
+  color: #bfbfbf;
+}
+
+.btn-subscription {
+  background-color: #3065f8;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 0.7em;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 3px 10px 0px #e2e2e2;
+  -moz-box-shadow: 1px 3px 10px 0px #e2e2e2;
+  box-shadow: 1px 3px 10px 0px #e2e2e2;
+}
+
+.bottom-content {
+  margin-top: 3.5em;
+  padding: 1.5em 1.3em;
+  background-image: url("../images/bg-curve-mobile.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bottom-message-illustration-wrapper {
+  padding-top: 100px;
+}
+
+.bottom-message-illustration {
+  background-image: url("../images/illustration-2.svg");
+}
+
+.bottom-content .message p {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

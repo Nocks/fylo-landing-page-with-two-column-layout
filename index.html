@@ -8,7 +8,9 @@
 
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <script src="https://kit.fontawesome.com/70ab2d7f09.js"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -22,16 +24,18 @@
         <img src="images/logo.svg" alt="logo">
       </div>
       <nav>
-        <ul>
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+        <ul class="menu horizontal-menu">
+          <li class="menu-item"><a href="#">Features</a></li>
+          <li class="menu-item"><a href="#">Team</a></li>
+          <li class="menu-item"><a href="#">Sign In</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="top-content">
-        <div class="message-illustration"></div>
+        <div class="top-message-illustration-wrapper">
+          <div class="message-illustration top-message-illustration"></div>
+        </div>
         <div class="marketing">
           <div class="message">
             <h3>
@@ -44,13 +48,15 @@
             </p>
           </div>
           <div class="subscription">
-            <input type="text" name="" placeholder="Enter your email...">
-            <button type="button" name="button">Get Started</button>
+            <input type="text" class="input-subscription" placeholder="Enter your email...">
+            <button type="button" class="btn-subscription" name="button">Get Started</button>
           </div>
         </div>
       </div>
       <div class="bottom-content">
-        <div class="message-illustration"></div>
+        <div class="bottom-message-illustration-wrapper">
+          <div class="message-illustration bottom-message-illustration"></div>
+        </div>
         <div class="marketing">
           <div class="message">
             <h3>
@@ -98,7 +104,7 @@
         </p>
       </div>
       <div class="subscription">
-        <input type="text" name="" placeholder="email@example.com">
+        <input type="text" class="input-subscription" placeholder="email@example.com">
         <button type="button" name="button">Get Started For Free</button>
       </div>
     </div>
