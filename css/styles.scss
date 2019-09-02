@@ -67,7 +67,6 @@ input:focus {
 }
 
 .container {
-  // padding: 1.5em 1.3em;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,11 +104,10 @@ header {
     .logo {
       display: flex;
       flex-direction: column;
-      flex: 1 1 12%;
+      flex: 1 1 10%;
       justify-content: center;
         img {
-          width: 4em;
-          height: 1.4em;
+          width: 5em;
         }
     }
 
@@ -154,7 +152,7 @@ main {
       color: $very-dark-blue;
       margin-top: 0.500em;
       line-height: 1.6em;
-      font-size: 1.50em;
+      font-size: 1.40em;
     }
 
     p {
@@ -173,13 +171,15 @@ main {
 
 .input-subscription[type=text] {
   width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 1px solid $desaturated-blue;
   border-radius: 3px;
   margin: 8px 0;
+  font-size: 1em;
 
     &::placeholder {
       color: $light-gray;
+      font-size: 1em;
     }
 }
 
@@ -187,16 +187,19 @@ main {
   background-color: $bright-blue;
   border: none;
   color: white;
-  padding: 10px 32px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   width: 100%;
   cursor: pointer;
   margin-top: 0.7em;
   border-radius: 3px;
+}
+
+.top-btn-subscription {
   -webkit-box-shadow: 1px 3px 10px 0px rgba(226,226,226,1);
   -moz-box-shadow: 1px 3px 10px 0px rgba(226,226,226,1);
   box-shadow: 1px 3px 10px 0px rgba(226,226,226,1);
@@ -204,7 +207,7 @@ main {
 
 .bottom-content {
   margin-top: 3.5em;
-  padding: 1.5em 1.3em;
+  padding: 1.5em 1.3em 4.2em 1.3em;
   background-image: url("../images/bg-curve-mobile.svg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -225,4 +228,193 @@ main {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.how-it-works {
+  display: flex;
+  justify-content: center;
+
+    a {
+      border-bottom: 1px solid $moderate-cyan;
+      padding-bottom: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+        img {
+          margin-left: 6px;
+        }
+    }
+}
+
+.testimonial-wrapper {
+  padding: 1.5em 0.6em;
+
+    .testimonial {
+      border-radius: 5px;
+      padding: 1em 0.5em 1.5em 1.8em;
+      -webkit-box-shadow: 0px 0px 8px 3px rgba(230,230,230,1);
+      -moz-box-shadow: 0px 0px 8px 3px rgba(230,230,230,1);
+      box-shadow: 0px 0px 8px 3px rgba(230,230,230,1);
+
+        .quotes-mark {
+          height: 0.8em;
+        }
+
+        .testimonial-text {
+          margin-top: 0;
+          color: $very-dark-blue;
+          font-size: 0.8em;
+        }
+
+        .testimonial-author {
+          display: flex;
+          align-items: center;
+          margin-top: 0.8em;
+
+            .profile-picture {
+              width: 40px;
+              height: 40px;
+
+                img {
+                  width: 40px;
+                  border-radius: 50%;
+                }
+            }
+
+            .details {
+              margin-top: 0;
+              color: $very-dark-blue;
+              line-height: 1.3em;
+              margin-left: 15px;
+
+                h4 {
+                  margin-top: 0;
+                  margin-bottom: 0;
+                  font-size: 0.9em;
+                }
+
+                .author-title {
+                  display: block;
+                  font-size: 0.7em;
+                  font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+.sub-content {
+  margin-top: 0;
+  background-color: $desaturated-blue;
+  padding: 3em 2.2em 6em 2.2em;
+
+    .message h3,
+    .message p {
+      color: $light-grayish-blue;
+    }
+
+    .subscription {
+      // padding-left: 1em;;
+      // padding-right: 1em;;
+    }
+
+    .input-subscription {
+      -webkit-box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+      -moz-box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+      box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+    }
+
+    .bottom-btn-subscription {
+      -webkit-box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+      -moz-box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+      box-shadow: 1px 2px 2px -1px rgba(112,108,112,0.58);
+    }
+}
+
+footer {
+  margin-top: 0;
+  padding: 4em 3em 1em 3em;
+  background-color: $very-dark-blue;
+  color: $light-grayish-blue;
+  font-size: 0.9em;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+     color: hsl(228, 45%, 44%);
+  }
+
+  .attribution span {
+     display: block;
+  }
+
+  .attribution span + span {
+     margin-top: 0;
+  }
+}
+
+footer .company-details {
+  .logo {
+    margin-bottom: 60px;
+  }
+
+  .details-icon {
+    margin-right: 15px;
+  }
+
+  .phone,
+  .email {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .email {
+    margin-top: 0;
+  }
+}
+
+footer .other-links {
+  margin-bottom: 4em;
+
+    .menu {
+      line-height: 0.9em;
+    }
+
+    .main {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    .social {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+
+
+      .social-icon + .social-icon {
+        margin-top: 0;
+      }
+
+      .social-icon {
+        margin-right: 11px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+      }
+
+      .social-icon .fab {
+        padding: 9px;
+        font-size: 14px;
+        color: $light-grayish-blue;;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid $light-grayish-blue;
+        border-radius: 50%;
+      }
+    }
 }

@@ -11,11 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -49,7 +44,7 @@
           </div>
           <div class="subscription">
             <input type="text" class="input-subscription" placeholder="Enter your email...">
-            <button type="button" class="btn-subscription" name="button">Get Started</button>
+            <button type="button" class="btn-subscription top-btn-subscription" name="button">Get Started</button>
           </div>
         </div>
       </div>
@@ -70,24 +65,27 @@
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required!
             </p>
-            <p>
+            <p class="how-it-works">
               <a href="#">
                 See how Fylo works <img src="images/icon-arrow.svg" alt="arrow">
               </a>
             </p>
           </div>
-          <div class="testimonial">
-            <blockquote>
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </blockquote>
-            <div class="testimonial-author">
-              <div class="profile-picture">
-                <img src="images/avatar-testimonial.jpg" alt="profile picture">
-              </div>
-              <div class="details">
-                <h4>Kyle Burton <span>Founder &amp; CEO, Huddle</span></h4>
+          <div class="testimonial-wrapper">
+            <div class="testimonial">
+              <img src="images/icon-quotes.svg" class="quotes-mark" alt="quotation marks">
+              <p class="testimonial-text">
+                Fylo has improved our team productivity by an order of magnitude.
+                Since making the switch our team has become a well-oiled
+                collaboration machine.
+              </p>
+              <div class="testimonial-author">
+                <div class="profile-picture">
+                  <img src="images/avatar-testimonial.jpg" alt="profile picture">
+                </div>
+                <div class="details">
+                  <h4>Kyle Burton <span class="author-title">Founder &amp; CEO, Huddle</span></h4>
+                </div>
               </div>
             </div>
           </div>
@@ -105,34 +103,38 @@
       </div>
       <div class="subscription">
         <input type="text" class="input-subscription" placeholder="email@example.com">
-        <button type="button" name="button">Get Started For Free</button>
+        <button type="button" class="btn-subscription bottom-btn-subscription" name="button">Get Started For Free</button>
       </div>
     </div>
     <footer>
       <div class="company-details">
         <div class="logo">
-          <img src="images/logo.svg" alt="logo">
+          <img src="images/logo.svg" class="company-logo svg" alt="logo">
         </div>
         <div class="phone">
-          <span><img src="images/icon-phone.svg" alt="phone icon"></span>
+          <span class="details-icon"><img src="images/icon-phone.svg" alt="phone icon"></span>
           <span>Phone: +1-543-123-4567</span>
         </div>
         <div class="email">
-          <span><img src="images/icon-email.svg" alt="email icon"></span>
+          <span class="details-icon"><img src="images/icon-email.svg" alt="email icon"></span>
           <span>example@fylo.com</span>
         </div>
       </div>
       <div class="other-links">
         <div class="main">
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
+          <ul class="menu">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
         </div>
         <div class="other">
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
+          <ul class="menu">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
         </div>
         <div class="social">
           <div class="social-icon">

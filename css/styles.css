@@ -84,12 +84,11 @@ header {
 header .logo {
   display: flex;
   flex-direction: column;
-  flex: 1 1 12%;
+  flex: 1 1 10%;
   justify-content: center;
 }
 header .logo img {
-  width: 4em;
-  height: 1.4em;
+  width: 5em;
 }
 header nav {
   margin-top: 0;
@@ -131,7 +130,7 @@ main {
   color: #070439;
   margin-top: 0.5em;
   line-height: 1.6em;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 .message p {
   padding-left: 0.8em;
@@ -148,29 +147,34 @@ main {
 
 .input-subscription[type=text] {
   width: 100%;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: 1px solid #585989;
   border-radius: 3px;
   margin: 8px 0;
+  font-size: 1em;
 }
 .input-subscription[type=text]::placeholder {
   color: #bfbfbf;
+  font-size: 1em;
 }
 
 .btn-subscription {
   background-color: #3065f8;
   border: none;
   color: white;
-  padding: 10px 32px;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   width: 100%;
   cursor: pointer;
   margin-top: 0.7em;
   border-radius: 3px;
+}
+
+.top-btn-subscription {
   -webkit-box-shadow: 1px 3px 10px 0px #e2e2e2;
   -moz-box-shadow: 1px 3px 10px 0px #e2e2e2;
   box-shadow: 1px 3px 10px 0px #e2e2e2;
@@ -178,7 +182,7 @@ main {
 
 .bottom-content {
   margin-top: 3.5em;
-  padding: 1.5em 1.3em;
+  padding: 1.5em 1.3em 4.2em 1.3em;
   background-image: url("../images/bg-curve-mobile.svg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -197,6 +201,159 @@ main {
   text-align: left;
   padding-left: 0;
   padding-right: 0;
+}
+
+.how-it-works {
+  display: flex;
+  justify-content: center;
+}
+.how-it-works a {
+  border-bottom: 1px solid #3c9f8f;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.how-it-works a img {
+  margin-left: 6px;
+}
+
+.testimonial-wrapper {
+  padding: 1.5em 0.6em;
+}
+.testimonial-wrapper .testimonial {
+  border-radius: 5px;
+  padding: 1em 0.5em 1.5em 1.8em;
+  -webkit-box-shadow: 0px 0px 8px 3px #e6e6e6;
+  -moz-box-shadow: 0px 0px 8px 3px #e6e6e6;
+  box-shadow: 0px 0px 8px 3px #e6e6e6;
+}
+.testimonial-wrapper .testimonial .quotes-mark {
+  height: 0.8em;
+}
+.testimonial-wrapper .testimonial .testimonial-text {
+  margin-top: 0;
+  color: #070439;
+  font-size: 0.8em;
+}
+.testimonial-wrapper .testimonial .testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8em;
+}
+.testimonial-wrapper .testimonial .testimonial-author .profile-picture {
+  width: 40px;
+  height: 40px;
+}
+.testimonial-wrapper .testimonial .testimonial-author .profile-picture img {
+  width: 40px;
+  border-radius: 50%;
+}
+.testimonial-wrapper .testimonial .testimonial-author .details {
+  margin-top: 0;
+  color: #070439;
+  line-height: 1.3em;
+  margin-left: 15px;
+}
+.testimonial-wrapper .testimonial .testimonial-author .details h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+.testimonial-wrapper .testimonial .testimonial-author .details .author-title {
+  display: block;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+.sub-content {
+  margin-top: 0;
+  background-color: #585989;
+  padding: 3em 2.2em 6em 2.2em;
+}
+.sub-content .message h3,
+.sub-content .message p {
+  color: #f6f6fe;
+}
+.sub-content .input-subscription {
+  -webkit-box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+  -moz-box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+  box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+}
+.sub-content .bottom-btn-subscription {
+  -webkit-box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+  -moz-box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+  box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
+}
+
+footer {
+  margin-top: 0;
+  padding: 4em 3em 1em 3em;
+  background-color: #070439;
+  color: #f6f6fe;
+  font-size: 0.9em;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
+footer .attribution span {
+  display: block;
+}
+footer .attribution span + span {
+  margin-top: 0;
+}
+
+footer .company-details .logo {
+  margin-bottom: 60px;
+}
+footer .company-details .details-icon {
+  margin-right: 15px;
+}
+footer .company-details .phone,
+footer .company-details .email {
+  display: flex;
+  align-items: baseline;
+}
+footer .company-details .email {
+  margin-top: 0;
+}
+
+footer .other-links {
+  margin-bottom: 4em;
+}
+footer .other-links .menu {
+  line-height: 0.9em;
+}
+footer .other-links .main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+footer .other-links .social {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+footer .other-links .social .social-icon + .social-icon {
+  margin-top: 0;
+}
+footer .other-links .social .social-icon {
+  margin-right: 11px;
+}
+footer .other-links .social .social-icon:last-child {
+  margin-right: 0;
+}
+footer .other-links .social .social-icon .fab {
+  padding: 9px;
+  font-size: 14px;
+  color: #f6f6fe;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #f6f6fe;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
