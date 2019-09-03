@@ -76,7 +76,7 @@ input:focus {
 }
 
 header {
-  padding: 1.5em 1.3em;
+  padding: 2.2em 1.3em 1.3em 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,9 +138,14 @@ main {
   color: #070439;
 }
 
-.subscription {
+.subscription-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription {
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
@@ -190,7 +195,7 @@ main {
 }
 
 .bottom-message-illustration-wrapper {
-  padding-top: 100px;
+  padding-top: 1.25em;
 }
 
 .bottom-message-illustration {
@@ -274,6 +279,12 @@ main {
 .sub-content .message h3,
 .sub-content .message p {
   color: #f6f6fe;
+}
+.sub-content .subscription .input-subscription {
+  margin-bottom: 0.75em;
+}
+.sub-content .subscription .bottom-btn-subscription {
+  margin-top: 0;
 }
 .sub-content .input-subscription {
   -webkit-box-shadow: 1px 2px 2px -1px rgba(112, 108, 112, 0.58);
@@ -376,6 +387,90 @@ footer .other-links .social .social-icon .fab {
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  header .logo img {
+    width: 6.5em;
+  }
+
+  .top-content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .bottom-content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .horizontal-menu {
+    font-size: 1.2em;
+  }
+
+  .message-illustration {
+    height: 80vh;
+  }
+
+  .marketing .message h3 {
+    font-size: 2em;
+  }
+  .marketing .message p {
+    font-size: 1.3em;
+  }
+
+  .marketing .subscription .input-subscription {
+    font-size: 1.2em;
+  }
+  .marketing .subscription .btn-subscription {
+    font-size: 1.2em;
+  }
+
+  .marketing .testimonial-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .marketing .testimonial {
+    max-width: 90%;
+  }
+  .marketing .testimonial .testimonial-text {
+    font-size: 1em;
+  }
+  .marketing .testimonial .testimonial-author .profile-picture {
+    height: 50px;
+    width: 50px;
+  }
+  .marketing .testimonial .testimonial-author .profile-picture img {
+    width: 50px;
+  }
+  .marketing .testimonial .testimonial-author .details h4 {
+    font-size: 1em;
+  }
+  .marketing .testimonial .testimonial-author .details .author-title {
+    font-size: 0.8em;
+  }
+
+  .sub-content .message h3 {
+    font-size: 2em;
+  }
+  .sub-content .message p {
+    font-size: 1.3em;
+  }
+  .sub-content .subscription {
+    max-width: 90%;
+  }
+
+  footer {
+    font-size: 1em;
+  }
+  footer .social-icon .fab {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px

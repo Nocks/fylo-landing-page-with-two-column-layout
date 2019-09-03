@@ -96,7 +96,7 @@ input:focus {
 }
 
 header {
-  padding: 1.5em 1.3em;
+  padding: 2.2em 1.3em 1.3em 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,9 +162,15 @@ main {
     }
 }
 
-.subscription {
+.subscription-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.subscription {
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
@@ -215,7 +221,7 @@ main {
 }
 
 .bottom-message-illustration-wrapper {
-  padding-top: 100px;
+  padding-top: 1.250em;
 }
 
 .bottom-message-illustration {
@@ -315,8 +321,14 @@ main {
     }
 
     .subscription {
-      // padding-left: 1em;;
-      // padding-right: 1em;;
+
+        .input-subscription {
+          margin-bottom: 0.750em;
+        }
+
+        .bottom-btn-subscription {
+          margin-top: 0;
+        }
     }
 
     .input-subscription {
@@ -410,7 +422,7 @@ footer .other-links {
       .social-icon .fab {
         padding: 9px;
         font-size: 14px;
-        color: $light-grayish-blue;;
+        color: $light-grayish-blue;
         text-align: center;
         text-decoration: none;
         border: 1px solid $light-grayish-blue;
@@ -471,8 +483,118 @@ footer .other-links {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-  //CSS
+  header {
+    padding-left: 2em;
+    padding-right: 2em;
 
+      .logo {
+
+        img {
+          width: 6.5em;
+        }
+      }
+  }
+
+  .top-content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .bottom-content {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .horizontal-menu {
+    font-size: 1.2em;
+  }
+
+  .message-illustration {
+    height: 80vh;
+  }
+
+  .marketing .message {
+
+      h3 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+  }
+
+  .marketing .subscription {
+
+      .input-subscription {
+        font-size: 1.2em;
+      }
+
+      .btn-subscription {
+        font-size: 1.2em;
+      }
+  }
+
+  .marketing .testimonial-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .marketing .testimonial {
+
+    max-width: 90%;
+
+      .testimonial-text {
+        font-size: 1em;
+      }
+
+      .testimonial-author {
+
+          .profile-picture {
+            height: 50px;
+            width: 50px;
+
+              img {
+                width: 50px;
+              }
+          }
+
+          .details h4 {
+            font-size: 1em;
+          }
+
+          .details .author-title {
+            font-size: 0.8em;
+          }
+      }
+  }
+
+  .sub-content {
+
+      .message {
+
+          h3 {
+            font-size: 2em;
+          }
+
+          p {
+            font-size: 1.3em;
+          }
+      }
+
+      .subscription {
+        max-width: 90%;
+      }
+  }
+
+  footer {
+    font-size: 1em;
+
+      .social-icon .fab {
+        padding: 10px;
+        font-size: 16px;
+      }
+  }
 }
 
 /*
