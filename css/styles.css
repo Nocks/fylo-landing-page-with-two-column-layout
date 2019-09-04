@@ -379,6 +379,93 @@ footer .other-links .social .social-icon .fab {
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  header .logo {
+    flex: 70%;
+  }
+  header .logo img {
+    width: 10em;
+  }
+  header nav .horizontal-menu {
+    font-size: 1em;
+  }
+
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4em;
+    padding-right: 4em;
+    min-height: 500px;
+  }
+  .top-content .top-message-illustration-wrapper {
+    flex: 50%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin-left: 5em;
+  }
+  .top-content .marketing {
+    flex: 50%;
+    order: 1;
+  }
+  .top-content .marketing .message h3 {
+    margin-top: 0;
+    padding-top: 2.5em;
+  }
+  .top-content .marketing .subscription-wrapper {
+    padding-right: 5em;
+  }
+
+  .message-illustration {
+    height: 100%;
+    width: 100%;
+  }
+
+  .subscription-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .subscription-wrapper .subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .subscription-wrapper .subscription .input-subscription[type=text] {
+    width: 57%;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 0.9em;
+  }
+  .subscription-wrapper .subscription .btn-subscription {
+    width: 40%;
+    padding: 10px 15px;
+    margin-top: 0;
+    font-size: 0.9em;
+  }
+
+  .marketing .message {
+    text-align: left;
+  }
+  .marketing .message h3 {
+    font-size: 2.2em;
+  }
+  .marketing .message p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.1em;
+  }
+}
 /*
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px

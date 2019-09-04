@@ -454,7 +454,108 @@ footer .other-links {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-  //CSS
+  header {
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+
+      .logo {
+        flex: 70%;
+
+        img {
+          width: 10em;
+        }
+      }
+
+      nav {
+
+          .horizontal-menu {
+            font-size: 1em;
+          }
+      }
+  }
+
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4em;
+    padding-right: 4em;
+    min-height: 500px;
+
+      .top-message-illustration-wrapper {
+        flex: 50%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+        margin-left: 5em;
+      }
+
+      .marketing {
+        flex: 50%;
+        order: 1;
+
+          .message h3 {
+            margin-top: 0;
+            padding-top: 2.5em;
+          }
+          .subscription-wrapper {
+            padding-right: 5em;
+          }
+  }
+}
+
+.message-illustration {
+  height: 100%;
+  width: 100%;
+}
+
+.subscription-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+
+  .subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
+      .input-subscription[type=text] {
+        width: 57%;
+        padding: 10px 15px;
+        margin: 0;
+        font-size: 0.9em;
+      }
+
+      .btn-subscription {
+        width: 40%;
+        padding: 10px 15px;
+        margin-top: 0;
+        font-size: 0.9em;
+      }
+  }
+}
+
+.marketing {
+
+    .message {
+      text-align: left;
+
+        h3 {
+          font-size: 2.2em;
+        }
+
+        p {
+          padding-left: 0;
+          padding-right: 0;
+          font-size: 1.1em;
+        }
+    }
+}
 
 }
 
