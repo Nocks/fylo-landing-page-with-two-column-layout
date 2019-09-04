@@ -215,6 +215,7 @@ main {
 .how-it-works a {
   border-bottom: 1px solid #3c9f8f;
   padding-bottom: 3px;
+  color: #3c9f8f;
   display: flex;
   justify-content: space-between;
   align-items: center;
