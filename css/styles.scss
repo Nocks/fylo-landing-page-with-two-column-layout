@@ -454,8 +454,11 @@ footer .other-links {
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
+// @media (min-width: 1025px) and (max-width: 1280px) {
+//
+// }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) {
 
   header {
     padding-top: 5em;
@@ -566,6 +569,7 @@ footer .other-links {
 }
 
 .bottom-content {
+  background-image: url(../images/bg-curve-desktop.svg);
   padding-left: 4em;
   padding-right: 4em;
   display: flex;
