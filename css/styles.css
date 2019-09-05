@@ -280,9 +280,11 @@ main {
   background-color: #585989;
   padding: 3em 2.2em 6em 2.2em;
 }
-.sub-content .message h3,
-.sub-content .message p {
+.sub-content .message h3 {
   color: #f6f6fe;
+}
+.sub-content .message p {
+  color: #bfbfbf;
 }
 .sub-content .subscription .input-subscription {
   margin-bottom: 0.75em;
@@ -395,9 +397,14 @@ footer .other-links .social .social-icon .fab {
     font-size: 1em;
   }
 
+  main {
+    margin-top: 2em;
+  }
+
   .top-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
     padding-left: 4em;
     padding-right: 4em;
     min-height: 500px;
@@ -443,13 +450,13 @@ footer .other-links .social .social-icon .fab {
   }
   .subscription-wrapper .subscription .input-subscription[type=text] {
     width: 57%;
-    padding: 10px 15px;
+    padding: 12px 15px;
     margin: 0;
     font-size: 0.9em;
   }
   .subscription-wrapper .subscription .btn-subscription {
     width: 40%;
-    padding: 10px 15px;
+    padding: 12px 15px;
     margin-top: 0;
     font-size: 0.9em;
   }
@@ -464,6 +471,134 @@ footer .other-links .social .social-icon .fab {
     padding-left: 0;
     padding-right: 0;
     font-size: 1.1em;
+  }
+
+  .bottom-content {
+    padding-left: 4em;
+    padding-right: 4em;
+    display: flex;
+    padding-top: 8em;
+  }
+  .bottom-content .marketing {
+    flex: 50%;
+    order: 1;
+  }
+  .bottom-content .marketing .message p {
+    padding-right: 10em;
+  }
+  .bottom-content .marketing .message .how-it-works {
+    justify-content: flex-start;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .bottom-content .marketing .testimonial-wrapper {
+    padding-top: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-start;
+    max-width: 60%;
+  }
+  .bottom-content .bottom-message-illustration-wrapper {
+    flex: 40%;
+    order: 2;
+    padding-top: 0;
+  }
+  .bottom-content .bottom-message-illustration-wrapper .message-illustration {
+    height: 80%;
+  }
+
+  .sub-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em;
+  }
+  .sub-content .message {
+    text-align: left;
+    flex: 50%;
+    padding-right: 10em;
+  }
+  .sub-content .message h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  .sub-content .message p {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sub-content .subscription-wrapper {
+    flex: 30%;
+    margin-top: 0;
+    align-items: center;
+  }
+  .sub-content .subscription-wrapper .subscription {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 60%;
+  }
+  .sub-content .subscription-wrapper .subscription .input-subscription {
+    width: 92%;
+  }
+  .sub-content .subscription-wrapper .subscription .bottom-btn-subscription {
+    margin-top: 1em;
+    width: 45%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  footer {
+    padding: 7em 4em 2em 4em;
+  }
+  footer .main-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .main-inner-wrapper .company-details {
+    flex: 20%;
+  }
+  footer .main-inner-wrapper .company-details .logo {
+    margin-bottom: 1em;
+  }
+  footer .main-inner-wrapper .company-details .phone {
+    margin-top: 0.5em;
+  }
+  footer .main-inner-wrapper .company-details .phone span + span {
+    margin-top: 0;
+  }
+  footer .main-inner-wrapper .company-details .email {
+    margin-top: 1em;
+  }
+  footer .main-inner-wrapper .company-details .email span + span {
+    margin-top: 0;
+  }
+  footer .main-inner-wrapper .other-links {
+    flex: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+    padding-right: 10em;
+  }
+  footer .main-inner-wrapper .other-links .main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  footer .main-inner-wrapper .other-links .other {
+    margin-top: 0;
+  }
+  footer .main-inner-wrapper .other-links .social {
+    margin-top: 0;
+  }
+  footer .attribution {
+    margin-top: 6em;
+    font-size: 0.781em;
+  }
+  footer .attribution span {
+    display: inline;
   }
 }
 /*

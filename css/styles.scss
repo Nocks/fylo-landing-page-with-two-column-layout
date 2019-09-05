@@ -319,9 +319,12 @@ main {
   background-color: $desaturated-blue;
   padding: 3em 2.2em 6em 2.2em;
 
-    .message h3,
-    .message p {
+    .message h3 {
       color: $light-grayish-blue;
+    }
+
+    .message p {
+      color: $light-gray;
     }
 
     .subscription {
@@ -475,9 +478,14 @@ footer .other-links {
       }
   }
 
+  main {
+    margin-top: 2em;
+  }
+
   .top-content {
     display: flex;
     justify-content: space-between;
+    padding-top: 0;
     padding-left: 4em;
     padding-right: 4em;
     min-height: 500px;
@@ -526,14 +534,14 @@ footer .other-links {
 
       .input-subscription[type=text] {
         width: 57%;
-        padding: 10px 15px;
+        padding: 12px 15px;
         margin: 0;
         font-size: 0.9em;
       }
 
       .btn-subscription {
         width: 40%;
-        padding: 10px 15px;
+        padding: 12px 15px;
         margin-top: 0;
         font-size: 0.9em;
       }
@@ -553,6 +561,160 @@ footer .other-links {
           padding-left: 0;
           padding-right: 0;
           font-size: 1.1em;
+        }
+    }
+}
+
+.bottom-content {
+  padding-left: 4em;
+  padding-right: 4em;
+  display: flex;
+  padding-top: 8em;
+
+    .marketing {
+      flex: 50%;
+      order: 1;
+
+        .message p {
+          padding-right: 10em;
+        }
+
+        .message .how-it-works {
+          justify-content: flex-start;
+          padding-right: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .testimonial-wrapper {
+          padding-top: 1em;
+          padding-left: 0;
+          padding-right: 0;
+          justify-content: flex-start;
+          max-width: 60%;
+        }
+    }
+
+    .bottom-message-illustration-wrapper {
+      flex: 40%;
+      order: 2;
+      padding-top: 0;
+
+        .message-illustration {
+          height: 80%;
+        }
+    }
+}
+
+.sub-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+
+    .message {
+      text-align: left;
+      flex: 50%;
+      padding-right: 10em;
+
+        h3 {
+          font-size: 2em;
+          margin-bottom: 0.5em;
+        }
+
+        p {
+          padding-left: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+    }
+
+    .subscription-wrapper {
+      flex: 30%;
+      margin-top: 0;
+      align-items: center;
+
+        .subscription {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex: 60%;
+
+            .input-subscription {
+              width: 92%;
+            }
+
+            .bottom-btn-subscription {
+              margin-top: 1em;
+              width: 45%;
+              padding-left: 30px;
+              padding-right: 30px;
+            }
+        }
+    }
+}
+
+footer {
+  padding: 7em 4em 2em 4em;
+
+    .main-inner-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+        .company-details {
+          flex: 20%;
+
+            .logo {
+              margin-bottom: 1em;
+            }
+
+            .phone {
+              margin-top: 0.5em;
+
+                span + span {
+                  margin-top: 0;
+                }
+            }
+
+            .email {
+              margin-top: 1em;
+
+                span + span {
+                  margin-top: 0;
+                }
+            }
+        }
+
+        .other-links {
+          flex: 50%;
+          margin-top: 0;
+          margin-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          padding-top: 5em;
+          padding-right: 10em;
+
+            .main {
+              margin-top: 0;
+              margin-bottom: 0;
+            }
+
+            .other {
+              margin-top: 0;
+            }
+
+            .social {
+              margin-top: 0;
+            }
+        }
+    }
+
+    .attribution {
+      margin-top: 6em;
+      font-size: 0.781em;
+
+        span {
+          display: inline;
         }
     }
 }
